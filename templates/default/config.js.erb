@@ -8,7 +8,7 @@ function (Settings) {
 
   return new Settings({
 
-<%= "    elasticsearch: #{node['kibana']['config']['elasticsearch']}," %>
+<%= "    elasticsearch: \"#{node['kibana']['config']['elasticsearch']}\"," %>
 <%= "    kibana_index: \"#{node['kibana']['config']['kibana_index']}\"," %>
 <%= "    default_route: \"#{node['kibana']['config']['default_route']}\"," %>
 <%= "    panel_names: #{node['kibana']['config']['panel_names']}" %>
